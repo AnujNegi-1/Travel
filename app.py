@@ -99,4 +99,5 @@ st.markdown("""
     <p>🚌 TravelBot AI - Your Smart Travel Companion</p>
     <p>Powered by LangGraph, Serper API, and AI</p>
 </div>
+
 """, unsafe_allow_html=True)
