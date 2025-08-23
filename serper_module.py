@@ -11,4 +11,5 @@ def fetch_serper_results(query):
     body = {"q": query}
     response = requests.post(url, json=body, headers=headers)
     data = response.json()
+
     return data.get("organic", [])[:3]  # top 3 results
