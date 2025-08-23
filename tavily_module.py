@@ -11,4 +11,6 @@ def fetch_tavily_summary(query):
     payload = {"query": query, "search_depth": "basic", "include_answer": True}
     response = requests.post(url, json=payload, headers=headers)
     data = response.json()
+
     return data.get("answer", "No summary available.")
+    
